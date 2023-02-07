@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.container{
+  max-width: 500px;
+  background-color: olivedrab;
+  font-family: "bree-serif";
+  align-items: center;
+  margin-bottom: 10px;
+}
+.Flex_container{
+  
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(246, 71, 58);
+  color: black;
+  background-size: cover;
+  min-width: 300px;
+
+}
+.dialog_box{
+  background-color: crimson !important;
+  color: whitesmoke;
+  border-radius: 5px;
+  
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border: none;
+}
+.loader{
+  color: rgb(67, 67, 195);
+}
+.dialog_button{
+  justify-content: end;
+  align-items: flex-end;
+  
+  border: none;
+  outline: none;
+
+
+}
+.dialog_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.dialog_chunk{
+  color:#61dafbaa
+}
+.button{
+  color: black;
+  margin-bottom: 5px;
+  
+}
