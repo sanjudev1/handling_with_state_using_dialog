@@ -23,7 +23,7 @@ import List_items from './assets/list_items';
     }
   }`
 
-  
+  console.log("fetching....")
 
 function App() {
   const {data,error,loading} =useQuery(QueryMessage);
@@ -36,6 +36,7 @@ function App() {
   
   return (
     <>
+    <h1>The data is fetched and displayed using Dialog</h1>
     {data && <>
     {data.messages.items.map((each) =>
       <List_items key={each.id} list={each}/>
