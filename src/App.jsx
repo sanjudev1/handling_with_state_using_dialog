@@ -37,11 +37,13 @@ function App() {
   return (
     <>
     <h1>The data is fetched and displayed using Dialog</h1>
+    <div className='container'>
     {data && <>
     {data.messages.items.map((each) =>
       <List_items key={each.id} list={each}/>
     )}
     </>}
+    </div>
     </>
     
   )

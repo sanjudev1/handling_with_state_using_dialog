@@ -41,20 +41,29 @@
   color: #888;
 }
 .container{
-  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
   background-color: olivedrab;
   font-family: "bree-serif";
   align-items: center;
   margin-bottom: 10px;
 }
 .Flex_container{
+  background-size: cover;
   
   justify-content: center;
   border-radius: 10px;
   background-color: rgb(246, 71, 58);
   color: black;
   background-size: cover;
-  min-width: 900px;
+  min-width: 300px;
+  max-width: 300px;
+  margin: 10px;
+  
 
 }
 .dialog_box{

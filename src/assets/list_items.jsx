@@ -1,8 +1,9 @@
 import { useState } from "react";
-import {Dialog} from "@reach/dialog";
+
 import "@reach/dialog/styles.css";
 import  "../App.css"
 import DialogDemo from "./dialogroot";
+
 
 const List_items =(props)=>{
     const {list}=props 
@@ -17,29 +18,16 @@ const Eventhandler=()=>{
     return(
 
 <div className="Flex_container">
-    <h1><span className="span">subject: </span>{subject}</h1>
-    <p><span className="span">search_snippet: </span>{search_snippet}</p>
-    <p><span className="span">body:  </span>{body}</p>
+    <h1><span className="span">subject: </span>{subject.substr(0,10)}</h1>
+    <p><span className="span">search_snippet: </span>{search_snippet.substr(0,20)}</p>
+    <p><span className="span">body:  </span>{body.substr(0,30)}</p>
 
     
     <button onClick={Eventhandler} className="button">view_more</button>
-    <DialogDemo key={id} list={list}/>
+     
     
-    
-        <Dialog isOpen={event} onDismiss={!event} className="dialog_box">
-            <div className="box">
-            <button onClick={Eventhandler} className="dialog_button">X</button>
-            <div className="dialog_content">
-            <p className="dialog_chunk"><span className="span">login:  </span >{login}</p>
-            <p className="dialog_chunk"><span className="span">href:  </span>{href}
-                <span className="span">id :</span>{id}
-                </p>
-            </div>
-           
-            </div>
+       {event && <DialogDemo key={id} list={list}/>}
         
-        
-        </Dialog> 
         
   
 
