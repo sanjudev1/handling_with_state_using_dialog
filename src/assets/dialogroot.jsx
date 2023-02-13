@@ -39,8 +39,8 @@ const [event,setEvent] =useState(true)
             <div className="dialog_content">
             <p className="dialog_chunk"><span className="span">subject:  </span >{data.message.subject}</p>
             <p className="dialog_chunk"><span className="span">language:  </span>{data.message.language}
-                <span className="span">href: </span>{data.message.href}
                 </p>
+                <p className="dialog_chunk"><span className="span">href:  </span >{data.message.href}</p>
 
             <p className="span"><span className="span">solved:  </span >{data.message.conversation.solved? "true": "false"}</p>
             </div>
